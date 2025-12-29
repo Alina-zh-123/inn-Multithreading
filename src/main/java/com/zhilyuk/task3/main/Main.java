@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class Main {
     private static final Logger logger = LogManager.getLogger();
@@ -20,13 +21,13 @@ public class Main {
     public static void main(String[] args) {
         try {
             List<String> carNumbers = Files.readAllLines(Paths.get(path));
-            List<Future<Boolean>> futures = new ArrayList<>();
+            List<Future<AtomicBoolean>> futures = new ArrayList<>();
             int index = 0;
 
             ExecutorService service = Executors.newFixedThreadPool(CAR_NUMBER);
             for (int i = 0 ; i < CAR_NUMBER; i++) {
                 Car car = new Car(carNumbers.get(index));
-                Future<Boolean> future = service.submit(car);
+                Future<AtomicBoolean> future = service.submit(car);
                 futures.add(future);
                 index++;
             }

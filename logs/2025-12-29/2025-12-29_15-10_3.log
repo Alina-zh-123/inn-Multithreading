@@ -1,0 +1,11 @@
+15:10:18.377 [pool-2-thread-10] INFO  com.zhilyuk.task3.parkingspot.ParkingSpot - Spot taken by car 2054 QR-7
+15:10:18.378 [pool-2-thread-10] INFO  com.zhilyuk.task3.parkingspot.ParkingSpot - Spot free
+15:10:18.378 [pool-2-thread-10] INFO  com.zhilyuk.task3.car.Car - Spot taken by car 2054 QR-7
+15:10:18.378 [pool-2-thread-3] INFO  com.zhilyuk.task3.parkingspot.ParkingSpot - Spot taken by car 7812 CD-4
+15:10:18.378 [pool-2-thread-3] INFO  com.zhilyuk.task3.parkingspot.ParkingSpot - Spot free
+15:10:18.378 [pool-2-thread-3] INFO  com.zhilyuk.task3.car.Car - Spot taken by car 7812 CD-4
+15:10:18.378 [pool-2-thread-9] INFO  com.zhilyuk.task3.parkingspot.ParkingSpot - Spot taken by car 8765 OP-3
+15:10:18.378 [pool-2-thread-9] INFO  com.zhilyuk.task3.parkingspot.ParkingSpot - Spot free
+15:10:18.378 [pool-2-thread-9] INFO  com.zhilyuk.task3.car.Car - Spot taken by car 8765 OP-3
+15:10:18.378 [pool-2-thread-1] INFO  com.zhilyuk.task3.parkingspot.ParkingSpot - Spot taken by car 5573 XT-3
+15:10:18.378 [pool-2-thread-1] INFO  com.zhilyuk.task3.parkingspot.ParkingSpot - Spot free

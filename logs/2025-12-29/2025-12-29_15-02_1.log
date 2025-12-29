@@ -1,0 +1,11 @@
+23:53:20.274 [pool-2-thread-5] INFO  com.zhilyuk.task3.car.Car - Spot free by car 3310 GH-7
+23:53:20.289 [pool-2-thread-9] INFO  com.zhilyuk.task3.car.Car - Spot free by car 8765 OP-3
+23:53:20.289 [pool-2-thread-6] INFO  com.zhilyuk.task3.car.Car - Spot free by car 6623 IJ-2
+23:53:20.289 [pool-2-thread-7] INFO  com.zhilyuk.task3.car.Car - Spot free by car 1178 KL-5
+23:53:20.289 [pool-2-thread-1] INFO  com.zhilyuk.task3.car.Car - Spot free by car 5573 XT-3
+23:53:20.289 [pool-2-thread-4] INFO  com.zhilyuk.task3.car.Car - Spot free by car 9945 EF-1
+23:53:20.289 [pool-2-thread-10] INFO  com.zhilyuk.task3.car.Car - Spot free by car 2054 QR-7
+23:53:20.289 [pool-2-thread-8] INFO  com.zhilyuk.task3.car.Car - Spot free by car 4491 MN-8
+15:02:17.373 [pool-2-thread-1] INFO  com.zhilyuk.task3.parkingspot.ParkingSpot - Spot taken by car 5573 XT-3
+15:02:17.373 [pool-2-thread-1] INFO  com.zhilyuk.task3.parkingspot.ParkingSpot - Spot free
+15:02:17.373 [pool-2-thread-1] INFO  com.zhilyuk.task3.car.Car - Spot taken by car 5573 XT-3
