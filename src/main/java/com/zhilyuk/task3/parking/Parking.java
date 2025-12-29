@@ -8,14 +8,13 @@ import java.util.ArrayList;
 public class Parking {
     public static final Logger logger = LogManager.getLogger();
     private static final Parking INSTANCE = new Parking();
-    private final int capacity = 500;
-    private ParkingSpot[] parking;
+    private static final int PARKING_CAPACITY = 5;
+    private ArrayList<ParkingSpot> parking;
 
     private Parking() {
-        this.parking = new ParkingSpot[capacity];
-        for (int i = 0; i < parking.length; i++) {
-            parking[i] = new ParkingSpot();
-            parking[i].setTaken(false);
+        parking = new ArrayList<>();
+        for (int i = 0; i < PARKING_CAPACITY; i++) {
+            parking.add(new ParkingSpot());
         }
     }
 
@@ -23,11 +22,7 @@ public class Parking {
         return INSTANCE;
     }
 
-    public int getCapacity() {
-        return capacity;
-    }
-
-    public ParkingSpot[] getParking() {
+    public ArrayList<ParkingSpot> getParking() {
         return parking;
     }
 }

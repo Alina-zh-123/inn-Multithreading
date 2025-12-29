@@ -11,18 +11,30 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class Car implements Callable<Boolean> {
     private static final Logger logger = LogManager.getLogger();
-    private String carNumber;
-    ReentrantLock lock = new ReentrantLock();
+    private final String carNumber;
     public static final long TIME_OUT = 100;
+
+    public Car(String carNumber) {
+        this.carNumber = carNumber;
+    }
 
     @Override
     public Boolean call() {
         Parking parking = Parking.getInstance();
         for (ParkingSpot parkingSpot : parking.getParking()) {
             if (parkingSpot.tryTake(this.carNumber, TIME_OUT)) {
+                logger.info("Spot taken by car {}", carNumber);
+                try {
+                    TimeUnit.SECONDS.sleep(3);
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
+                parkingSpot.leave();
+                logger.info("Spot free by car {}", carNumber);
                 return true;
             }
         }
+        logger.info("No free spots");
         return false;
     }
 }

@@ -23,9 +23,6 @@
 
     <Loggers>
         <Logger name="Log_Console" level="debug" additivity="true">
-<!--            <Filters>-->
-<!--                <CoinNewFilter threshold="1000" onMatch="ACCEPT" onMismatch="DENY"/>-->
-<!--            </Filters>-->
             <AppenderRef ref="Console"/>
         </Logger>
 

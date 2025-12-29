@@ -1,0 +1,11 @@
+23:50:43.555 [main] ERROR com.zhilyuk.task3.main.Main - Error input file input.txt
+23:53:17.261 [pool-2-thread-2] INFO  com.zhilyuk.task3.parkingspot.ParkingSpot - Spot taken by car 0287 AB-6
+23:53:17.261 [pool-2-thread-2] INFO  com.zhilyuk.task3.parkingspot.ParkingSpot - Spot free
+23:53:17.261 [pool-2-thread-2] INFO  com.zhilyuk.task3.car.Car - Spot taken by car 0287 AB-6
+23:53:17.261 [pool-2-thread-3] INFO  com.zhilyuk.task3.parkingspot.ParkingSpot - Spot taken by car 7812 CD-4
+23:53:17.261 [pool-2-thread-3] INFO  com.zhilyuk.task3.parkingspot.ParkingSpot - Spot free
+23:53:17.261 [pool-2-thread-3] INFO  com.zhilyuk.task3.car.Car - Spot taken by car 7812 CD-4
+23:53:17.261 [pool-2-thread-5] INFO  com.zhilyuk.task3.parkingspot.ParkingSpot - Spot taken by car 3310 GH-7
+23:53:17.261 [pool-2-thread-5] INFO  com.zhilyuk.task3.parkingspot.ParkingSpot - Spot free
+23:53:17.261 [pool-2-thread-5] INFO  com.zhilyuk.task3.car.Car - Spot taken by car 3310 GH-7
+23:53:17.261 [pool-2-thread-8] INFO  com.zhilyuk.task3.parkingspot.ParkingSpot - Spot taken by car 4491 MN-8

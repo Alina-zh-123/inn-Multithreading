@@ -35,11 +35,26 @@ public class ParkingSpot {
             if (!this.getTaken()) {
                 this.setTaken(true);
                 this.setCarNumberTakenBy(carNumber);
+                logger.info("Spot taken by car {}", carNumber);
+                this.leave();
                 return true;
             }
         } finally {
             lock.unlock();
         }
         return false;
+    }
+
+    public void leave() {
+        lock.lock();
+        try {
+            if (this.getTaken()) {
+                logger.info("Spot free");
+                this.setTaken(false);
+                this.setCarNumberTakenBy(null);
+            }
+        } finally {
+            lock.unlock();
+        }
     }
 }
